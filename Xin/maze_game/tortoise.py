@@ -1,3 +1,4 @@
+#小乌龟模型
 from turtle import Turtle
 class Tortoise(Turtle):
     def __init__(self,maze_list,start_m,start_n,end_m,end_n):

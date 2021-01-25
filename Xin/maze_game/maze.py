@@ -1,3 +1,4 @@
+#迷宫设定
 from turtle import Turtle
 class Maze(Turtle):
     size = 20
