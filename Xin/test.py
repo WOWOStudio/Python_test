@@ -10,7 +10,7 @@ def draw_star():
     turtle.right(144)
   turtle.end_fill()
 
-for i in range(50):
+for i in range(10):
   turtle.speed(0)
   turtle.penup()
   x = randint(-150, 150)
@@ -23,4 +23,4 @@ turtle.penup()
 turtle.goto(0, -130)
 turtle.pendown()
 turtle.write('By 黄帮主',  font = ('SimHei', 12, 'bold'))
-turtle.done()
+turtle.exitonclick()
