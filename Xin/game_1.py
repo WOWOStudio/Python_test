@@ -1,5 +1,5 @@
 #石头，剪刀，布小游戏
-import random
+'''import random
 game = ['剪刀','石头','布']
 win = [
     ['石头','剪刀'],
@@ -17,7 +17,7 @@ while 1:
         print('你出了%s,电脑出了%s,平局啦，再试一次吧。' % (your_choice,com_choice))
     else:
         print('你出了{yours},电脑出了{coms},你输了，好可惜啊，再试试呗。'.format(coms=com_choice,yours=your_choice))
-
+'''
 #三个骰子猜大小
 '''
 import random
