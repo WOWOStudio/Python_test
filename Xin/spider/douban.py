@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 print('豆瓣书单:')
 def get_douban_books(url):
     headers = {
-     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+     'user-agent': ''
     }
     res = requests.get(url,headers=headers)
     soup = BeautifulSoup(res.text,'html.parser')

@@ -1,4 +1,4 @@
-#
+#自动打开浏览器，博客自动评论
 from selenium import webdriver
 import time
 browser = webdriver.Chrome()
