@@ -11,8 +11,8 @@ class WeiboSpider:
         self.session.headers.update(self.headers)
     def login(self):
         login_data = {
-            'username': '18792303289',
-            'password': 'Xx18792303289',
+            'username': '',
+            'password': '',
             'savestate': '1',
             'r': 'https://m.weibo.cn/',
             'ec': '0',
