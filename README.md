@@ -9,3 +9,4 @@
 ,[Requests官方文档](https://requests.readthedocs.io/zh_CN/latest/)
 ,[Http转json](https://www.convertonline.io/convert/query-string-to-json)
 ,[selenium中文文档](https://selenium-python-zh.readthedocs.io/en/latest/)
+,[openpyxl文档](https://www.osgeo.cn/openpyxl/)
