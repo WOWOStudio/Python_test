@@ -7,7 +7,7 @@ headers = {
      'user-agent': ''
 }
 
-#爬取豆瓣top250书单和top250电影，并存入excel中
+#爬豆瓣top250书单和top250电影，并存入excel中
 class set_excel:
     def __init__(self,the_title,the_type,url):
         urls = [url.format(num*25) for num in range(10)]

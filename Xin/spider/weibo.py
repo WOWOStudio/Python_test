@@ -1,4 +1,4 @@
-#微博自动发微博
+#发微博
 import requests
 class WeiboSpider:
     def __init__(self):
