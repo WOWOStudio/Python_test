@@ -3,6 +3,7 @@ import requests
 from concurrent import futures
 
 
+
 # 解析列表页内容，得到部分链接
 def parse_list_page(text):
     soup = BeautifulSoup(text, 'html.parser')
