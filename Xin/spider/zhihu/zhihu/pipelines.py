@@ -6,12 +6,8 @@
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
-from scrapy.exceptions import DropItem
 
-class AppinnPipeline:
+
+class ZhihuPipeline:
     def process_item(self, item, spider):
-        if item.get('score'):
-            item['score'] = int(item['score'])
-            if item['score'] < 3:
-                raise DropItem('去掉3分一下的文章')
-            return item
+        return item

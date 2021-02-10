@@ -1,11 +1,3 @@
-'''
-Author: your name
-Date: 2021-02-09 19:49:36
-LastEditTime: 2021-02-09 20:02:35
-LastEditors: Please set LastEditors
-Description: In User Settings Edit
-FilePath: \undefinedc:\mywork\Python_test\Xin\spider\appinn\appinn\items.py
-'''
 # Define here the models for your scraped items
 #
 # See documentation in:

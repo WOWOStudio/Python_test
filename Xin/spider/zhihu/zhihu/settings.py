@@ -1,4 +1,4 @@
-# Scrapy settings for appinn project
+# Scrapy settings for zhihu project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,28 +7,30 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'appinn'
+BOT_NAME = 'zhihu'
 
-SPIDER_MODULES = ['appinn.spiders']
-NEWSPIDER_MODULE = 'appinn.spiders'
+SPIDER_MODULES = ['zhihu.spiders']
+NEWSPIDER_MODULE = 'zhihu.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'appinn (+http://www.yourdomain.com)'
+#USER_AGENT = 'zhihu (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
-ITEM_PIPELINES = {
-    'appinn.pipelines.AppinnPipeline': 300,
+FEED_URI = 'zhihu_iphone.jsonl'
+FEED_FORMAT = 'jsonlines'
+
+DEFAULT_REQUEST_HEADERS = {
+    "authority": "www.zhihu.com",
+    "referer": "https://www.zhihu.com/",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
 }
-FEED_FORMAT = 'csv'
-FEED_URI = 'appinn_windows_apps.csv'
-FEED_EXPORT_ENCODING = 'utf-8'
 AUTOTHROTTLE_ENABLED = True
-AUTOTHROTTLE_TARGET_CONCURRENCY = 5
+AUTOTHROTTLE_TARGET_CONCURRENCY = 10
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
@@ -52,13 +54,13 @@ AUTOTHROTTLE_TARGET_CONCURRENCY = 5
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'appinn.middlewares.AppinnSpiderMiddleware': 543,
+#    'zhihu.middlewares.ZhihuSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'appinn.middlewares.AppinnDownloaderMiddleware': 543,
+#    'zhihu.middlewares.ZhihuDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -70,7 +72,7 @@ AUTOTHROTTLE_TARGET_CONCURRENCY = 5
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'appinn.pipelines.AppinnPipeline': 300,
+#    'zhihu.pipelines.ZhihuPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

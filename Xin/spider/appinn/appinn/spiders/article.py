@@ -1,5 +1,5 @@
 import scrapy
-from appinn.items import Article
+from appinn.items import AppinnItem
 
 class ArticleSpider(scrapy.Spider):
     name = 'article'
@@ -7,7 +7,7 @@ class ArticleSpider(scrapy.Spider):
     start_urls = ['https://www.appinn.com/category/windows/']
 
     def parse_article(self, response):
-        article = Article()
+        article = AppinnItem()
         # 从 response 里提取出标题、时间、作者、分数和内容
         # 并将它们都存到 article 这个 item 里
         article['title'] = response.css('h1.title::text').get()
