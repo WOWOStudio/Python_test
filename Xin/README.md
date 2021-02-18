@@ -1,3 +1,9 @@
 # WOWO5
-game是小游戏文件
-spider是爬虫文件
+game --> 小游戏 
+
+spider --> 爬虫 
+
+dataAnalysis --> 数据分析 
+
+LeetCode, C++ --> 力扣
+
