@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-17 18:36:08
- * @LastEditTime: 2021-02-17 18:43:13
+ * @LastEditTime: 2021-02-21 09:42:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \C++\LeetCode\data_structure\chapterOne\sectionTwo.cpp
@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-class Splution()
+class Splution
 {
 
 public:
@@ -39,4 +39,4 @@ public:
         }
         return s;
     }
-}
+};
