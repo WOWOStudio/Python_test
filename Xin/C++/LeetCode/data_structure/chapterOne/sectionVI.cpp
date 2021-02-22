@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-21 09:43:12
- * @LastEditTime: 2021-02-21 09:47:44
+ * @LastEditTime: 2021-02-22 19:09:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \C++\LeetCode\data_structure\chapterOne\sectionVI.cpp
@@ -9,6 +9,12 @@
 
 #include <iostream>
 using namespace std;
+struct ListNode
+{
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
 
 // 迭代
 class Solution
