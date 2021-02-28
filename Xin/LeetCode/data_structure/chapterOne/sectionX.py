@@ -53,7 +53,7 @@ class Solution:
             while deque and deque[-1] < nums[i]:
                 deque.pop()
             deque.append(nums[i])
-        res = deque[0]
+        res = [deque[0]]
 
         for i in range(k, len(nums)):
             if deque[0] == nums[i-k]:
