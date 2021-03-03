@@ -32,20 +32,20 @@ class Solution:
     def fib(self, n: int) -> int:
         a, b = 0, 1
         for _ in range(n):
-            a, b = b, (a+b)%1000000007
+            a, b = b, (a+b) % 1000000007
         return a
 
 # 动态规划
 class Solution:
     def fib(self, n):
-        if n<0:
+        if n < 0:
             return -1
-        elif n==0:
+        elif n == 0:
             return 0
-        elif n==1:
+        elif n == 1:
             return 1
         else:
-            dp=[]
+            dp = []
             dp.append(0)
             dp.append(1)
             for i in range(2, n+1):
@@ -55,19 +55,19 @@ class Solution:
 
 # 递归
 class Solution:
-    def fib(self,n):
-        if n==0:
+    def fib(self, n):
+        if n == 0:
             return 0
-        if n==1:
+        if n == 1:
             return 1
         return self.fib(n-1) + self.fib(n-2)
 
 # 回溯
 class Solution:
-    def fib(self,n):
-        if n==0:
+    def fib(self, n):
+        if n == 0:
             return 0
-        if n==1:
+        if n == 1:
             return 1
 
         leftFib = self.fib(n-1)
