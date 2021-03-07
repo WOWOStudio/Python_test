@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-06 08:59:21
- * @LastEditTime: 2021-03-06 09:07:57
+ * @LastEditTime: 2021-03-07 10:05:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \C++\LeetCode\data_structure\chapterII\sectionV.cpp
@@ -17,7 +17,7 @@ public:
     {
         string s = to_string(num);
         int a = 1, b = 1, len = s.size();
-        for (i = 2; i <= len; i++)
+        for (int i = 2; i <= len; i++)
         {
             string tmp = s.substr(i - 2, i);
             int c = tmp.compare("10") >= 0 && tmp.compare("25") <= 0 ? a + b : a;
