@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-08 09:22:15
- * @LastEditTime: 2021-03-08 09:46:00
+ * @LastEditTime: 2021-03-10 10:05:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \C++\LeetCode\data_structure\chapterII\sectionVII.cpp
@@ -18,11 +18,13 @@ public:
     int lengthOfLongestSubstring(string s)
     {
         unordered_map<char, int> dic;
-        int res = 0, tmp = 0, len = len.size(), i;
+        int res = 0, tmp = 0, len = s.size(), i;
         for (int j = 0; j < len; j++)
         {
             if (dic.find(s[j]) == dic.end())
-                i = -1 else i = dic.find(s[j])->second;
+                i = -1;
+            else
+                i = dic.find(s[j])->second;
             dic[s[j]] = j;
             tmp = tmp < j - i ? tmp + 1 : j - i;
             res = max(res, tmp);
